@@ -8,6 +8,7 @@ packages = [{include = "wordle_project", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
+rich = "^13.7.0"
 
 
 [tool.poetry.group.dev.dependencies]
