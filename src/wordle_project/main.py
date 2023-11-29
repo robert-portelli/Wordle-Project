@@ -22,10 +22,10 @@ WORD_TOPIC = 'misc'
 
 def main():
     word = pre_process(WORDS_PATH)
-    for _ in range(MAX_ATTEMPTS):
+    for attempt in range(MAX_ATTEMPTS):
         display_guesses(GUESSES, word)
-        GUESSES[_] = main_process()
-        if GUESSES[_] == word:
+        GUESSES[attempt] = main_process()
+        if GUESSES[attempt] == word:
             break
 
 def pre_process(path):
